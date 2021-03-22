@@ -16,22 +16,22 @@
           <div id="unity-progress-bar-full"></div>
         </div>
       </div>
-      <div id="unity-mobile-warning">
+      <!-- <div id="unity-mobile-warning">
         WebGL builds are not supported on mobile devices.
-      </div>
-      <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Porto</div>
-      </div>
+      </div> -->
+      <!-- <div id="unity-footer"> -->
+        <!-- <div id="unity-webgl-logo"></div> -->
+        <!-- <div id="unity-fullscreen-button"></div>
+        <div id="unity-build-title">Porto</div> -->
+      <!-- </div> -->
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/TestPorto.loader.js";
+      var loaderUrl = buildUrl + "/Debug.loader.js";
       var config = {
-        dataUrl: buildUrl + "/TestPorto.data",
-        frameworkUrl: buildUrl + "/TestPorto.framework.js",
-        codeUrl: buildUrl + "/TestPorto.wasm",
+        dataUrl: buildUrl + "/Debug.data.gz",
+        frameworkUrl: buildUrl + "/Debug.framework.js.gz",
+        codeUrl: buildUrl + "/Debug.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Porto",
@@ -53,8 +53,8 @@
           mobileWarning.style.display = "none";
         }, 5000);
       } else {
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "99.99vw"; //"960px" 
+        canvas.style.height = "99.55vh";// "600px"
       }
       loadingBar.style.display = "block";
 
